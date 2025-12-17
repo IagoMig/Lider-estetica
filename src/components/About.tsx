@@ -1,11 +1,9 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Expand } from 'lucide-react';
+import { Expand, ChevronLeft, ChevronRight } from 'lucide-react';
 
-const beforeAfterItems = [
-  { before: '/antes1.PNG', after: '/depois1.PNG' },
-  { before: '/antes2.PNG', after: '/depois2.PNG' },
-];
+// Montagens Antes & Depois
+const galleryItems = ['/01.png', '/2.png', '/3.png', '4.png'];
 
 export function About() {
   const [index, setIndex] = useState(0);
@@ -18,33 +16,33 @@ export function About() {
   };
 
   return (
-    <section className="relative bg-black py-32 overflow-hidden">
+    <section className="relative bg-black py-24 md:py-32 overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 bg-neutral-900/70 skew-x-[-18deg] translate-x-1/3" />
+      <div className="absolute inset-0 bg-neutral-900/70 skew-x-[-14deg] translate-x-1/3" />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12">
+      <div className="relative z-10 max-w-7xl mx-auto px-5 md:px-12">
         {/* HEADER */}
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-14 items-center">
           {/* TEXTO */}
           <motion.div
-            initial={{ opacity: 0, y: 40 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-6xl font-black italic uppercase text-white mb-8">
+            <h2 className="text-4xl md:text-6xl font-black italic uppercase text-white mb-6">
               Movidos por <br />
               <span className="text-[#39FF14]">Paixão</span>
             </h2>
 
-            <p className="text-gray-300 text-lg leading-relaxed max-w-xl">
-              Cada veículo recebe um cuidado minucioso, combinando tecnologia de
-              ponta com acabamento artesanal para resultados impecáveis.
+            <p className="text-gray-300 text-base md:text-lg leading-relaxed max-w-xl">
+              Tecnologia, técnica e cuidado extremo aplicados em cada detalhe.
+              Resultados que falam por si.
             </p>
           </motion.div>
 
           {/* IMAGEM PRINCIPAL */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.96 }}
+            initial={{ opacity: 0, scale: 0.97 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
           >
@@ -56,72 +54,69 @@ export function About() {
           </motion.div>
         </div>
 
-        {/* ANTES / DEPOIS */}
-        <div className="mt-28 flex flex-col items-center">
-          <h3 className="text-3xl md:text-4xl font-black uppercase text-white mb-12">
+        {/* GALERIA */}
+        <div className="mt-20 md:mt-28 flex flex-col items-center">
+          <h3 className="text-2xl md:text-4xl font-black uppercase text-white mb-10">
             Antes <span className="text-[#39FF14]">e</span> Depois
           </h3>
 
-          {/* CARD BASE */}
-          <div className="relative w-full max-w-6xl">
-            <div className="absolute inset-0 bg-neutral-900/80 border border-white/10 rounded-xl -z-10" />
+          {/* CARD */}
+          <div className="relative w-full max-w-5xl">
+            <div className="absolute inset-0 bg-neutral-900/80 border border-white/10 rounded-2xl" />
 
-            <div className="relative overflow-hidden rounded-xl p-8 md:p-12">
-              <AnimatePresence custom={direction} mode="wait">
-                <motion.div
-                  key={index}
-                  custom={direction}
-                  initial={{ x: direction * 120, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  exit={{ x: direction * -120, opacity: 0 }}
-                  transition={{ duration: 0.45, ease: 'easeInOut' }}
-                  className="grid grid-cols-1 md:grid-cols-2 gap-12"
+            <div className="relative rounded-2xl p-4 sm:p-6 md:p-10">
+              <div className="relative overflow-hidden rounded-xl">
+                <AnimatePresence custom={direction} mode="wait">
+                  <motion.img
+                    key={index}
+                    src={galleryItems[index]}
+                    custom={direction}
+                    initial={{ x: direction * 120, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    exit={{ x: direction * -120, opacity: 0 }}
+                    transition={{ duration: 0.4, ease: 'easeInOut' }}
+                    className="w-full h-[260px] sm:h-[340px] md:h-[420px] object-contain mx-auto"
+                    onClick={() => setIsOpen(true)}
+                  />
+                </AnimatePresence>
+
+                {/* Overlay */}
+                <div className="absolute inset-0 flex items-end justify-end p-4 pointer-events-none">
+                  <Expand className="w-5 h-5 text-[#39FF14] opacity-80" />
+                </div>
+              </div>
+
+              {/* CONTROLES */}
+              <div className="flex items-center justify-between mt-6">
+                <button
+                  onClick={() => paginate((index - 1 + galleryItems.length) % galleryItems.length)}
+                  className="p-2 border border-white/20 hover:border-[#39FF14] transition"
                 >
-                  {['before', 'after'].map((type, i) => (
+                  <ChevronLeft className="text-white" />
+                </button>
+
+                <div className="flex gap-2">
+                  {galleryItems.map((_, i) => (
                     <button
                       key={i}
-                      onClick={() => setIsOpen(true)}
-                      className="group relative rounded-lg overflow-hidden bg-neutral-800/40 border border-white/10"
-                    >
-                      {/* CONTAINER */}
-                      <div className="h-[340px] md:h-[420px] flex items-center justify-center p-4">
-                        <img
-                          src={
-                            type === 'before'
-                              ? beforeAfterItems[index].before
-                              : beforeAfterItems[index].after
-                          }
-                          className="max-h-full max-w-full object-contain transition-transform duration-700 group-hover:scale-[1.02]"
-                        />
-                      </div>
-
-                      {/* LABEL */}
-                      <span className="absolute top-4 left-4 text-xs tracking-widest uppercase text-white/70">
-                        {type === 'before' ? 'Antes' : 'Depois'}
-                      </span>
-
-                      {/* ICON */}
-                      <Expand className="absolute bottom-4 right-4 w-5 h-5 text-[#39FF14] opacity-0 group-hover:opacity-100 transition" />
-                    </button>
+                      onClick={() => paginate(i)}
+                      className={`w-2.5 h-2.5 rounded-full transition ${
+                        index === i
+                          ? 'bg-[#39FF14] shadow-[0_0_10px_#39FF14]'
+                          : 'bg-gray-600'
+                      }`}
+                    />
                   ))}
-                </motion.div>
-              </AnimatePresence>
-            </div>
-          </div>
+                </div>
 
-          {/* DOTS */}
-          <div className="flex gap-3 mt-10">
-            {beforeAfterItems.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => paginate(i)}
-                className={`w-3 h-3 rounded-full transition ${
-                  index === i
-                    ? 'bg-[#39FF14] shadow-[0_0_10px_#39FF14]'
-                    : 'bg-gray-600'
-                }`}
-              />
-            ))}
+                <button
+                  onClick={() => paginate((index + 1) % galleryItems.length)}
+                  className="p-2 border border-white/20 hover:border-[#39FF14] transition"
+                >
+                  <ChevronRight className="text-white" />
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -135,25 +130,19 @@ export function About() {
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center"
           >
-            <div className="relative max-w-6xl w-full px-6">
-              <button
-                onClick={() => setIsOpen(false)}
-                className="absolute -top-10 right-0 text-[#39FF14] text-sm uppercase"
-              >
-                Fechar ✕
-              </button>
+            <button
+              onClick={() => setIsOpen(false)}
+              className="absolute top-6 right-6 text-[#39FF14] text-sm uppercase"
+            >
+              Fechar ✕
+            </button>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <img
-                  src={beforeAfterItems[index].before}
-                  className="w-full h-[75vh] object-contain bg-transparent"
-                />
-                <img
-                  src={beforeAfterItems[index].after}
-                  className="w-full h-[75vh] object-contain bg-transparent"
-                />
-              </div>
-            </div>
+            <motion.img
+              src={galleryItems[index]}
+              initial={{ scale: 0.95 }}
+              animate={{ scale: 1 }}
+              className="max-w-[95vw] max-h-[85vh] object-contain"
+            />
           </motion.div>
         )}
       </AnimatePresence>
