@@ -53,11 +53,13 @@ export function SplashScreen({
           type: 'spring',
           stiffness: 200
         }} className="mb-4">
-              <h1 className="text-6xl md:text-8xl font-black italic tracking-tighter text-white uppercase" style={{
-            textShadow: '0 0 20px rgba(57, 255, 20, 0.5)'
-          }}>
-                LÍDER
-              </h1>
+<img
+  src="/LOGO_SEMBOLHAS.png"
+  alt="Líder Estética Automotiva"
+  className="h-32 md:h-40 lg:h-48 object-contain mx-auto"
+/>
+
+
               <motion.div className="h-2 w-full bg-[#39FF14] mt-2 skew-x-[-20deg]" initial={{
             width: 0
           }} animate={{
@@ -77,7 +79,7 @@ export function SplashScreen({
         }} transition={{
           delay: 0.6
         }} className="text-[#39FF14] font-bold tracking-[0.5em] text-sm md:text-lg uppercase">
-              Estética Automotiva
+            
             </motion.p>
           </div>
         </motion.div>}

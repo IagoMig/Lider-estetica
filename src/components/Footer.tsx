@@ -5,9 +5,11 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-16">
           <div>
-            <h3 className="text-3xl font-black italic text-white uppercase mb-6">
-              LÍDER <span className="text-[#39FF14]">.</span>
-            </h3>
+              <img
+                src="/LOGO_SEMBOLHAS.png"
+                alt="Líder Estética Automotiva"
+                className="h-20 md:h-24 lg:h-24 object-contain"
+              />
             <p className="text-gray-500 max-w-xs">
               Estética automotiva premium para quem exige perfeição. Elevando o
               cuidado automotivo a uma forma de arte.
@@ -23,11 +25,14 @@ export function Footer() {
                 <MapPin className="w-5 h-5 text-[#39FF14] flex-shrink-0 mt-1" />
                 <div>
                   <p className="text-sm leading-relaxed">
-                    Rua Coronel José Carvalho de Oliveira, 100
+                    Unidade Uberaba:
                     <br />
-                    Curitiba - PR
+                    Rua Cel. José Carvalho de Oliveira, 100 - Uberaba, Curitiba/PR
+                    <br /> <br />
+                    Unidade Jardim das Américas:
                     <br />
-                    CEP: 81570-160
+                    Rua Prof. João Doetzer, 51 - Jd das Américas, Curitiba/PR
+
                   </p>
                 </div>
               </li>
@@ -42,11 +47,19 @@ export function Footer() {
             <h4 className="text-lg font-bold uppercase tracking-wider mb-6 text-[#39FF14]">
               Redes Sociais
             </h4>
-            <div className="flex gap-4">
-              {[Instagram, Facebook, Twitter].map((Icon, i) => <a key={i} href="#" className="w-12 h-12 bg-neutral-900 flex items-center justify-center rounded-none hover:bg-[#39FF14] hover:text-black transition-all duration-300">
-                  <Icon className="w-5 h-5" />
-                </a>)}
-            </div>
+                <div className="flex gap-4">
+                  {[Instagram].map((Icon, i) => (
+                    <a
+                      key={i}
+                      href="https://www.instagram.com/liderestetica_automotiva/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-12 h-12 bg-neutral-900 flex items-center justify-center rounded-none hover:bg-[#39FF14] hover:text-black transition-all duration-300"
+                    >
+                      <Icon className="w-5 h-5" />
+                    </a>
+                  ))}
+                </div>
           </div>
         </div>
 

@@ -32,35 +32,40 @@ export function Hero() {
             <div className="flex items-center gap-4 mb-6">
               <div className="h-[2px] w-12 bg-[#39FF14]" />
               <span className="text-[#39FF14] font-bold tracking-widest uppercase text-sm">
-                Serviço Premium de Estética
+                LAVA CAR E ESTÉTICA AUTOMOTIVA EM CURITIBA
               </span>
             </div>
 
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-black italic uppercase leading-[0.9] tracking-tighter mb-8">
-              Perfeição <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
-                Em Cada
-              </span>{' '}
-              <br />
-              <span className="text-[#39FF14]">Detalhe</span>
-            </h1>
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-black italic uppercase leading-[0.9] tracking-tighter mb-8">
+                  Estética automotiva <br />
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">
+                  completa para
+                </span>{' '}
+                <br />
+                <span className="text-[#39FF14]">o seu veículo</span>
+              </h1>
+
 
             <p className="text-gray-300 text-lg md:text-xl max-w-xl mb-8 font-medium leading-relaxed">
-              Transforme seu veículo com nossos serviços de estética automotiva.
-              Não apenas limpamos; restauramos o brilho de showroom com precisão
-              cirúrgica.
+             Se você está procurando lava car em Curitiba, a Líder Estética Automotiva é a escolha certa. Somos especialistas em estética automotiva profissional, oferecendo serviços completos para limpeza, proteção e valorização do seu veículo.
+
             </p>
 
             <div className="bg-[#39FF14]/10 border-l-4 border-[#39FF14] p-4 mb-8 flex items-start gap-3">
               <MapPin className="w-5 h-5 text-[#39FF14] flex-shrink-0 mt-1" />
               <div>
                 <p className="text-white font-bold text-sm uppercase tracking-wide mb-1">
-                  Nossa Localização
+                 Pensando na sua comodidade, a Líder conta com 2 unidades:
                 </p>
                 <p className="text-gray-300 text-sm">
-                  Rua Coronel José Carvalho de Oliveira, 100
+                  Unidade Uberaba:
                   <br />
-                  Curitiba - PR, 81570-160
+                  Rua Cel. José Carvalho de Oliveira, 100 - Uberaba, Curitiba/PR
+                  <br /> <br />
+                  Unidade Jardim das Américas:
+                  <br />  
+                  Rua Prof. João Doetzer, 51 - Jd das Américas, Curitiba/PR
+
                 </p>
               </div>
             </div>
