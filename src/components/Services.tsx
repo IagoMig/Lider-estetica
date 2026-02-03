@@ -162,7 +162,7 @@ const services = [
   },
   {
     title: 'Martelinho de Ouro',
-    image: 'https://www.tribunapr.com.br/conteudo-publicitario/cra-curitiba/cra-oferece-a-conhecida-tecnica-do-martelinho-de-ouro-com-qualidade-e-confianca',
+    image: 'https://mecanicagarrett.com.br/wp-content/uploads/2024/10/ferramentas-de-martelinho-de-ouro.jpg',
     icon: Hammer,
     description:
       'Martelinho de ouro para remoção de amassados sem pintura.'
