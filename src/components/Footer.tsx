@@ -17,7 +17,7 @@ export function Footer() {
             <img
               src="/LOGO_SEMBOLHAS.png"
               alt="Líder Estética Automotiva"
-              className="h-20 md:h-24 lg:h-24 object-contain"
+              className="h-20 md:h-24 object-contain mb-4"
             />
             <p className="text-gray-500 max-w-xs">
               Estética automotiva premium para quem exige perfeição. Elevando o
@@ -30,28 +30,35 @@ export function Footer() {
             <h4 className="text-lg font-bold uppercase tracking-wider mb-6 text-[#39FF14]">
               Localização
             </h4>
-            <ul className="space-y-4 text-gray-400">
-              <li className="flex items-start gap-3">
-                <MapPin className="w-5 h-5 text-[#39FF14] flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-sm leading-relaxed">
-                    Unidade Uberaba:
-                    <br />
-                    Rua Cel. José Carvalho de Oliveira, 100 - Uberaba, Curitiba/PR
-                    <br />
-                    <br />
-                    Unidade Jardim das Américas:
-                    <br />
-                    Rua Prof. João Doetzer, 51 - Jd das Américas, Curitiba/PR
-                  </p>
-                </div>
-              </li>
 
-              <li className="flex items-center gap-3 hover:text-white transition-colors mt-6">
+            <div className="space-y-6 text-gray-400">
+              <div className="flex gap-3">
+                <MapPin className="w-5 h-5 text-[#39FF14] mt-1" />
+                <p className="text-sm leading-relaxed">
+                  <strong>Unidade Uberaba</strong>
+                  <br />
+                  Rua Cel. José Carvalho de Oliveira, 100
+                  <br />
+                  Uberaba – Curitiba/PR
+                </p>
+              </div>
+
+              <div className="flex gap-3">
+                <MapPin className="w-5 h-5 text-[#39FF14] mt-1" />
+                <p className="text-sm leading-relaxed">
+                  <strong>Unidade Jardim das Américas</strong>
+                  <br />
+                  Rua Prof. João Doetzer, 51
+                  <br />
+                  Jardim das Américas – Curitiba/PR
+                </p>
+              </div>
+
+              <div className="flex items-center gap-3 hover:text-white transition-colors pt-2">
                 <Phone className="w-5 h-5 text-[#39FF14]" />
                 (41) 8748-4057
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
 
           {/* Redes Sociais */}
@@ -61,7 +68,6 @@ export function Footer() {
             </h4>
 
             <div className="flex gap-4 flex-wrap">
-              {/* Instagram */}
               <a
                 href="https://www.instagram.com/liderestetica_automotiva/"
                 target="_blank"
@@ -71,7 +77,6 @@ export function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
 
-              {/* Facebook */}
               <a
                 href="https://www.facebook.com/profile.php?id=61561429557035"
                 target="_blank"
@@ -81,38 +86,42 @@ export function Footer() {
                 <Facebook className="w-5 h-5" />
               </a>
 
-              {/* WhatsApp */}
               <a
-                href="https://wa.me/+5541987484057?text=Olá,%20vim%20pelo%20site%20e%20gostaria%20de%20agendar%20um%20serviço!"
+                href="https://wa.me/5541987484057"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-12 h-12 bg-neutral-900 flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all"
               >
                 <MessageCircle className="w-5 h-5" />
               </a>
-
-              {/* Google Maps - Uberaba */}
-              <a
-                href="https://share.google/oXfBsDuDCoarE1GGU"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Unidade Uberaba"
-                className="w-12 h-12 bg-neutral-900 flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all"
-              >
-                <MapPin className="w-5 h-5" />
-              </a>
-
-              {/* Google Maps - Jardim das Américas */}
-              <a
-                href="https://share.google/60s4l22zBzJrg4SJl"
-                target="_blank"
-                rel="noopener noreferrer"
-                title="Unidade Jardim das Américas"
-                className="w-12 h-12 bg-neutral-900 flex items-center justify-center hover:bg-[#39FF14] hover:text-black transition-all"
-              >
-                <MapPin className="w-5 h-5" />
-              </a>
             </div>
+          </div>
+        </div>
+
+        {/* MAPAS */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+          {/* Mapa Uberaba */}
+          <div>
+            <h5 className="text-sm font-semibold mb-3 text-[#39FF14] uppercase">
+              Unidade Uberaba
+            </h5>
+            <iframe
+              src="https://www.google.com/maps?q=Rua%20Cel.%20José%20Carvalho%20de%20Oliveira,%20100,%20Curitiba%20PR&output=embed"
+              loading="lazy"
+              className="w-full h-64 rounded-lg border border-neutral-800"
+            />
+          </div>
+
+          {/* Mapa Jardim das Américas */}
+          <div>
+            <h5 className="text-sm font-semibold mb-3 text-[#39FF14] uppercase">
+              Unidade Jardim das Américas
+            </h5>
+            <iframe
+              src="https://www.google.com/maps?q=Rua%20Prof.%20João%20Doetzer,%2051,%20Curitiba%20PR&output=embed"
+              loading="lazy"
+              className="w-full h-64 rounded-lg border border-neutral-800"
+            />
           </div>
         </div>
 

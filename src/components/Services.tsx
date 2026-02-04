@@ -28,11 +28,11 @@ const services = [
       'Lavagem técnica automotiva profissional em Curitiba, utilizando métodos seguros que preservam a pintura.'
   },
   {
-    title: 'Enceramento Wax Automotivo',
+    title: 'Enceramento Automotivo',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/4-1.webp',
     icon: Sparkles,
     description:
-      'Enceramento automotivo com wax premium para brilho intenso e proteção da pintura.'
+      'Enceramento automotivo com as melhores ceras para brilho intenso e proteção da pintura.'
   },
   {
     title: 'Revitalização de Plásticos Externos',
@@ -147,11 +147,11 @@ const services = [
       'Higienização interna automotiva completa de bancos, carpetes e painéis.'
   },
   {
-    title: 'Higienização de Ar Condicionado Automotivo',
+    title: 'Higienização de Manutenção',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/19.webp',
     icon: Wind,
     description:
-      'Limpeza do ar-condicionado automotivo eliminando fungos, bactérias e odores.'
+      'Ideal para o seu Dia a dia, limpeza rápida e prática'
   },
   {
     title: 'Remoção de Chuva Ácida',
