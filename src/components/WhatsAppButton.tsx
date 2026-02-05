@@ -16,7 +16,7 @@ export function WhatsAppButton() {
         items-center
         gap-3
         bg-[#25D366]
-        text-black
+        text-white
         px-5
         py-3
         rounded-full
