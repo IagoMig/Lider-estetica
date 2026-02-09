@@ -4,6 +4,7 @@ import { Services } from '../components/Services';
 import { About } from '../components/About';
 import { Footer } from '../components/Footer';
 import { motion } from 'framer-motion';
+import { BlogSection } from '../components/BlogSection';
 export function LandingPage() {
   return <motion.div initial={{
     opacity: 0
@@ -14,6 +15,7 @@ export function LandingPage() {
   }} className="bg-black min-h-screen w-full overflow-x-hidden">
       <Hero />
       <Services />
+      <BlogSection />
       <About />
       <Footer />
     </motion.div>;
