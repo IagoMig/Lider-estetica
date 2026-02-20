@@ -21,6 +21,13 @@ const WHATSAPP_LINK =
 
 const services = [
   {
+    title: 'Higienização de Manutenção',
+    image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/19.webp',
+    icon: Wind,
+    description:
+      'Ideal para o dia a dia. Limpeza rápida e prática para manter o interior do veículo sempre apresentável.'
+  },
+  {
     title: 'Lavagem Técnica Automotiva em Curitiba',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/1-1.webp',
     icon: Droplets,
@@ -28,11 +35,11 @@ const services = [
       'Lavagem técnica automotiva profissional em Curitiba, utilizando métodos seguros que preservam a pintura.'
   },
   {
-    title: 'Enceramento Automotivo',
+    title: 'Aplicação de Cera',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/4-1.webp',
     icon: Sparkles,
     description:
-      'Enceramento automotivo com as melhores ceras para brilho intenso e proteção da pintura.'
+      'Aplicação de cera para realce de brilho e proteção leve da pintura automotiva.'
   },
   {
     title: 'Revitalização de Plásticos Externos',
@@ -42,11 +49,11 @@ const services = [
       'Revitalização de plásticos externos automotivos, restaurando cor e proteção.'
   },
   {
-    title: 'Polimento de Pintura Automotiva',
-    image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/2-1.webp',
-    icon: Sparkles,
+    title: 'Higienização Interna Automotiva',
+    image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/18.webp',
+    icon: Brush,
     description:
-      'Polimento de pintura automotiva para remoção de riscos, marcas e oxidação.'
+      'Higienização interna completa de bancos, carpetes, painéis e laterais.'
   },
   {
     title: 'Hidratação de Couro Automotivo',
@@ -60,98 +67,49 @@ const services = [
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/6.webp',
     icon: ShieldCheck,
     description:
-      'Impermeabilização de bancos e estofados automotivos contra líquidos e sujeiras.'
+      'Proteção de bancos e estofados contra líquidos, manchas e sujeiras.'
   },
   {
     title: 'Oxi-sanitização Automotiva',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/06/oxi-sanitizacao-2-1024x768-1.jpg',
     icon: Wind,
     description:
-      'Oxi-sanitização automotiva com ozônio para eliminar bactérias, fungos e odores.'
-  },
-  {
-    title: 'Higienização de Porta-Malas',
-    image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/8.webp',
-    icon: Car,
-    description:
-      'Higienização completa de porta-malas, removendo sujeiras e odores.'
-  },
-  {
-    title: 'Higienização de Cadeirão Infantil',
-    image: 'https://boxdetail.com.br/wp-content/uploads/2023/06/cadeirao-para-crianca.jpg',
-    icon: Car,
-    description:
-      'Limpeza profunda e segura de cadeirão infantil automotivo.'
-  },
-  {
-    title: 'Cristalização de Pintura Automotiva',
-    image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/11.webp',
-    icon: Layers,
-    description:
-      'Cristalização de pintura automotiva para proteção avançada e brilho duradouro.'
+      'Eliminação de bactérias, fungos e odores através de ozônio.'
   },
   {
     title: 'Espelhamento de Pintura Automotiva',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/10.webp',
     icon: Eye,
     description:
-      'Espelhamento de pintura com acabamento premium e profundidade extrema.'
+      'Processo estético focado em brilho e profundidade. Indicado para quem busca acabamento visual premium.'
   },
   {
     title: 'Vitrificação de Pintura Automotiva',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/06/00_HEADER-1.jpg',
     icon: ShieldCheck,
     description:
-      'Vitrificação de pintura automotiva com proteção cerâmica de longa duração.'
-  },
-  {
-    title: 'Revitalização de Plásticos Internos',
-    image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/13.webp',
-    icon: SprayCan,
-    description:
-      'Revitalização e proteção de plásticos internos automotivos.'
-  },
-  {
-    title: 'Vitrificação de Vidros Automotivos',
-    image: 'https://boxdetail.com.br/wp-content/uploads/2023/06/13.png',
-    icon: ShieldCheck,
-    description:
-      'Vitrificação de vidros automotivos para melhor visibilidade e repelência à água.'
+      'Proteção cerâmica de longa duração. Mais resistência química e proteção superior à pintura.'
   },
   {
     title: 'Descontaminação de Pintura',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/15.webp',
     icon: Layers,
     description:
-      'Descontaminação da pintura automotiva, removendo resíduos e aspereza.'
+      'Remoção de resíduos, aspereza e contaminações da pintura automotiva.'
   },
   {
     title: 'Polimento de Faróis',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/16.webp',
     icon: Eye,
     description:
-      'Polimento de faróis automotivos para restaurar transparência e segurança.'
+      'Restauração da transparência dos faróis, melhorando estética e segurança.'
   },
   {
     title: 'Limpeza Técnica de Motor',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/17.webp',
     icon: Wrench,
     description:
-      'Limpeza técnica de motor automotivo realizada com total segurança.'
-  },
-  {
-    title: 'Higienização Interna Automotiva',
-    image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/18.webp',
-    icon: Brush,
-    description:
-      'Higienização interna automotiva completa de bancos, carpetes e painéis.'
-  },
-  {
-    title: 'Higienização de Manutenção',
-    image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/19.webp',
-    icon: Wind,
-    description:
-      'Ideal para o seu Dia a dia, limpeza rápida e prática'
+      'Limpeza técnica do motor realizada com total segurança e cuidado.'
   },
   {
     title: 'Remoção de Chuva Ácida',
@@ -165,16 +123,13 @@ const services = [
     image: 'https://mecanicagarrett.com.br/wp-content/uploads/2024/10/ferramentas-de-martelinho-de-ouro.jpg',
     icon: Hammer,
     description:
-      'Martelinho de ouro para remoção de amassados sem pintura.'
+      'Remoção de pequenos amassados sem necessidade de pintura.'
   }
 ];
 
 export function Services() {
   return (
-    <section
-      className="relative bg-neutral-900 py-32 -mt-20 z-20"
-      aria-label="Serviços de estética automotiva em Curitiba"
-    >
+    <section className="relative bg-neutral-900 py-32 -mt-20 z-20">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="mb-20 text-center">
           <motion.h2
@@ -187,8 +142,7 @@ export function Services() {
           </motion.h2>
 
           <p className="text-gray-400 max-w-3xl mx-auto text-sm md:text-base">
-            Lava car e estética automotiva premium em Curitiba. Agende agora pelo WhatsApp
-            e deixe seu veículo com acabamento impecável.
+            Estética automotiva premium em Curitiba. Agende pelo WhatsApp e deixe seu veículo impecável.
           </p>
 
           <div className="h-1 w-24 bg-[#39FF14] mx-auto mt-6 skew-x-[-20deg]" />
@@ -205,19 +159,17 @@ export function Services() {
               whileHover={{ y: -10 }}
               className="group bg-black overflow-hidden shadow-2xl hover:shadow-[#39FF14]/20 transition-all"
             >
-              {service.image && (
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={service.image}
-                    alt={service.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-black/60" />
-                </div>
-              )}
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-black/60" />
+              </div>
 
-              <div className="p-8 border-l-4 border-transparent group-hover:border-[#39FF14] transition-all">
+              <div className="p-8 border-l-4 border-transparent group-hover:border-[#39FF14]">
                 <div className="w-12 h-12 bg-[#39FF14] flex items-center justify-center mb-6 skew-x-[-10deg]">
                   <service.icon className="w-6 h-6 text-black skew-x-[10deg]" />
                 </div>
@@ -226,7 +178,7 @@ export function Services() {
                   {service.title}
                 </h3>
 
-                <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                <p className="text-gray-400 text-sm mb-6">
                   {service.description}
                 </p>
 
