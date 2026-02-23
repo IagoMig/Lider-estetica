@@ -36,7 +36,7 @@ const services = [
   },
   {
     title: 'Aplicação de Cera',
-    image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/4-1.webp',
+    image: 'https://imgs.search.brave.com/hoKWGc5M6iWH8TOQaD9ECuh-nWxAfHocD3xeC-ut-sw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG9ydGFsb2xoYXJk/aW5hbWljby5jb20u/YnIvdXBsb2Fkcy9p/bWcvcG9zdHMvMTE3/MjkvYzMzZGEyMWI4/ZTM3ZDkwMzFiMTNh/NWQwOTVlMWQzNzIu/anBn',
     icon: Sparkles,
     description:
       'Aplicação de cera para realce de brilho e proteção leve da pintura automotiva.'
@@ -60,7 +60,7 @@ const services = [
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/5-1.webp',
     icon: Brush,
     description:
-      'Hidratação de couro automotivo para manter maciez, durabilidade e aparência original.'
+      'higienização e hidratação de bancos em couro para manter maciez, durabilidade e aparência original.'
   },
   {
     title: 'Impermeabilização de Tecidos Automotivos',
