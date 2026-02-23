@@ -160,7 +160,7 @@ export function Hero() {
                 <option>Vitrificação</option>
                 <option>Higienização</option>
                 <option>Lavagem Técnica</option>
-                <option>Detalhamento</option>
+                <option>Limpeza de manutenção</option>
               </select>
 
               <textarea
