@@ -36,7 +36,7 @@ const services = [
   },
   {
     title: 'Aplicação de Cera',
-    image: 'https://imgs.search.brave.com/hoKWGc5M6iWH8TOQaD9ECuh-nWxAfHocD3xeC-ut-sw/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/cG9ydGFsb2xoYXJk/aW5hbWljby5jb20u/YnIvdXBsb2Fkcy9p/bWcvcG9zdHMvMTE3/MjkvYzMzZGEyMWI4/ZTM3ZDkwMzFiMTNh/NWQwOTVlMWQzNzIu/anBn',
+    image: 'https://www.portalolhardinamico.com.br/app/thumbs.php?img=../uploads/img/posts/11729/c33da21b8e37d9031b13a5d095e1d372.jpg&w=770&h=490',
     icon: Sparkles,
     description:
       'Aplicação de cera para realce de brilho e proteção leve da pintura automotiva.'
