@@ -21,7 +21,7 @@ const WHATSAPP_LINK =
 
 const services = [
   {
-    title: 'Higienização de Manutenção',
+    title: 'Limpeza de Manutenção',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/19.webp',
     icon: Wind,
     description:
@@ -56,7 +56,7 @@ const services = [
       'Higienização interna completa de bancos, carpetes, painéis e laterais.'
   },
   {
-    title: 'Hidratação de Couro Automotivo',
+    title: 'Higienização e Hidratação de Bancos em Couro',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/5-1.webp',
     icon: Brush,
     description:
@@ -77,7 +77,7 @@ const services = [
       'Eliminação de bactérias, fungos e odores através de ozônio.'
   },
   {
-    title: 'Espelhamento de Pintura Automotiva',
+    title: 'Enceramento técnico feito na máquina',
     image: 'https://boxdetail.com.br/wp-content/uploads/2023/05/10.webp',
     icon: Eye,
     description:
